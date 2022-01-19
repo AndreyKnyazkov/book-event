@@ -56,12 +56,12 @@
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M0.5 4C0.5 2.067 2.067 0.5 4 0.5H32C33.933 0.5 35.5 2.067 35.5 4V32C35.5 33.933 33.933 35.5 32 35.5H4C2.067 35.5 0.5 33.933 0.5 32V4Z"
-                          fill="#45ABA0" stroke="#EDEDED" />
-                        <path d="M8 16.8889H28V19.1111H8V16.8889Z" fill="white" />
+                          fill="" stroke="#EDEDED"></path>
+                        <path d="M8 16.8889H28V19.1111H8V16.8889Z" fill="#C7C7C7"></path>
                       </svg>
                     </div>
                     <div class="booking-accrodion-item__children-info__counter__number">
-                      <span>2</span>
+                      <span>0</span>
                     </div>
                     <div class="booking-accrodion-item__children-info__counter__plus">
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -117,7 +117,7 @@
                       </svg>
                     </div>
                     <div class="booking-accrodion-item__children-info__counter__number">
-                      <span>1</span>
+                      <span>0</span>
                     </div>
                     <div class="booking-accrodion-item__children-info__counter__plus">
                       <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -133,7 +133,7 @@
               </div>
               <!--  -->
               <div class="booking-accrodion-item__children__button">
-                <a href="#">Proceed</a>
+                <a class="proceed-button">Proceed</a>
               </div>
             </div>
           </div>
@@ -152,12 +152,12 @@
               <form class="booking-accrodion-item__children__form">
                 <div class="booking-accrodion-item__children__form-item booking-accrodion-item__children__form_acc-name">
                   <label for="acc-name">Your e-mail <span>*</span></label>
-                  <input type="text" id="acc-name">
+                  <input type="text" id="acc-name" type="email" required>
                 </div>
                 <!--  -->
                 <div class="booking-accrodion-item__children__form-item booking-accrodion-item__children__form_acc-number">
                   <label for="acc-number">Your phone number <span>*</span></label>
-                  <input type="text" id="acc-number">
+                  <input type="text" id="acc-number" required>
                 </div>
                 <!--  -->
                 <div class="booking-accrodion-item__children__form-item booking-accrodion-item__children__form_acc-textarea">
@@ -165,7 +165,7 @@
                   <textarea id="acc-textarea"></textarea>
                 </div>
                 <div class="booking-accrodion-item__children__button">
-                  <a href="#">Proceed</a>
+                  <button class="proceed-button">Proceed</button>
                 </div>
               </form>
               <!--  -->
@@ -184,21 +184,20 @@
             </div>
             <div class="booking-accrodion-item__children">
               <div class="booking-accrodion-item__children__tickets">
-                <div class="booking-accrodion-item__children-ticket">
-                  <div class="booking-accrodion-item__children-ticket__date">10 July, Wednesday, 19:00</div>
-                  <div class="booking-accrodion-item__children-ticket__ticket">
-                    <span>2</span>
-                    <img src="./assets/img/acc-ticket.svg" alt="">
+                  <!-- <div class="booking-accrodion-item__children-ticket">
+                    <div class="booking-accrodion-item__children-ticket__date">10 July, Wednesday, 19:00</div>
+                    <div class="booking-accrodion-item__children-ticket__ticket">
+                      <span>2</span>
+                      <img src="./assets/img/acc-ticket.svg" alt="">
+                    </div>
                   </div>
-                </div>
-                <!--  -->
-                <div class="booking-accrodion-item__children-ticket">
-                  <div class="booking-accrodion-item__children-ticket__date">12 July, Friday, 21:00</div>
-                  <div class="booking-accrodion-item__children-ticket__ticket">
-                    <span>1</span>
-                    <img src="./assets/img/acc-ticket.svg" alt="">
-                  </div>
-                </div>
+                  <div class="booking-accrodion-item__children-ticket">
+                    <div class="booking-accrodion-item__children-ticket__date">12 July, Friday, 21:00</div>
+                    <div class="booking-accrodion-item__children-ticket__ticket">
+                      <span>1</span>
+                      <img src="./assets/img/acc-ticket.svg" alt="">
+                    </div>
+                  </div> -->
               </div>
               <!--  -->
               <div class="booking-accrodion-item__children__successtext">
@@ -213,6 +212,8 @@
       </div>
     </div>
   </div>
+  <script src="./assets/js/inputmask.js"></script>
+  </script>
   <script src="./assets/js/script.js"></script>
 </body>
 </html>

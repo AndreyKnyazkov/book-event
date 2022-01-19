@@ -152,18 +152,24 @@
   margin-top: -5px;
   margin-left: 27px;
 }
+.booking-accrodion-item__children--info__date span {
+  font-weight: bold;
+}
 .booking-accrodion-item__children__button {
   display: flex;
   margin-left: 15px;
   margin-top: 1px;
   padding-bottom: 22px;
 }
-.booking-accrodion-item__children__button a,
-.booking-accrodion-item__children__button a:visited,
-.booking-accrodion-item__children__button a:hover,
-.booking-accrodion-item__children__button a:active {
+.booking-accrodion-item__children__button .proceed-button,
+.booking-accrodion-item__children__button .proceed-button:visited,
+.booking-accrodion-item__children__button .proceed-button:hover,
+.booking-accrodion-item__children__button .proceed-button:active {
   color: #FFFFFF!important;
   background: #169688;
+  cursor: pointer;
+  outline: none;
+  border: none;
   padding: 11px 0px;
   font-size: 16px;
   line-height: 19px;
@@ -172,6 +178,7 @@
   padding-left: 34px;
   padding-right: 34px;
 }
+
 .booking-accrodion-item__children__form {
   padding-left: 12px;
   padding-right: 13px;
@@ -191,7 +198,8 @@
 .booking-accrodion-item__children__form-item label span {
   color: #f44336
 }
-.booking-accrodion-item__children__form-item input {
+.booking-accrodion-item__children__form-item input,
+.booking-accrodion-item__children__form-item textarea {
   margin-top: 8px;
   background: #FFFFFF;
   border: 1px solid #DCDBDB;
@@ -204,6 +212,9 @@
   font-size: 16px;
   line-height: 22px;
   color: #484848;
+}
+.booking-accrodion-item__children__form-item textarea {
+  font-weight: 400;
 }
 .booking-accrodion-item__children__form-item input:focus {
   outline: none;
@@ -230,8 +241,10 @@
   font-size: 18px;
   line-height: 20px;
 }
-.booking-accrodion-item__children-ticket__ticket img {
+.booking-accrodion-item__children-ticket__ticket svg {
   margin-left: 6px;
+  min-width: 30px;
+  min-height: 24px;
 }
 .booking-accrodion-item__children__tickets {
   padding-left: 16px;
@@ -280,7 +293,20 @@
   letter-spacing: -0.4px;
   padding-right: 26px;
   padding-left: 26px;
+  color: #FFFFFF!important;
+  background: #169688;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  padding: 11px 0px;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  border-radius: 60px;
+  padding-left: 34px;
+  padding-right: 34px;
 }
+
 .booking-accrodion-item__children__button__success {
   padding-bottom: 20px;
 }
