@@ -146,12 +146,12 @@ window.addEventListener('DOMContentLoaded', (event) => {
           document.querySelectorAll('.booking-accrodion-item__children-info__counter__minus')[index].innerHTML = minusNormalSvg
 
           manageTicketsData(index)  
-
           
           if (eventBookingData.unlockedItems <= 2) {
             setUnclockedItems(2)
 
           }
+          // if contact details was filled out
           console.log(stepNumberTitle[1])
           if (stepNumberTitle[1].style.color === successStepStyle) {
             setUnclockedItems(3)

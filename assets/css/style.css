@@ -323,3 +323,41 @@
   transition: transform 0.4s ease!important;
   height: auto!important;
 }
+/*  */
+.booking-accrodion-item__children-ticket {
+  position: relative;
+}
+.booking-accrodion-item__children-ticket__ticket {
+  z-index: 2;
+}
+.booking-accrodion-item__children-ticket::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #AAAAAA;
+  transform: translateY(14px);
+  z-index: 1;
+}
+.booking-accrodion-item__children-ticket__date {
+  z-index: 2;
+}
+.booking-accrodion-item__children-ticket__date,
+.booking-accrodion-item__children-ticket__ticket {
+  position: relative;
+}
+.booking-accrodion-item__children-ticket__date:after {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 100%;
+  background: #fff;
+}
+.booking-accrodion-item__children-ticket__ticket:before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 100%;
+  left: -5px;
+  background: #fff;
+}
